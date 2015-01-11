@@ -1,0 +1,12 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<% @posts.each do |p|  %>
+  <h3><%= p.title %></h3>
+  <p><%= p.body %></p>
+  <p><%= p.created_at %></p>
+  <p><%= p.id %></p>
+<hr />
+<% end %>
+
+<%= link_to "Home", posts_index_path %>
